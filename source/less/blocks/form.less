@@ -62,20 +62,21 @@
 }
 
 .form__item {
+  position: relative;
   margin-bottom: 25px;
+  padding-left: 45px;
 }
 
 .form__item-input {
-  position: relative;
   display: block;
-  padding-left: 45px;
 }
 
 .form__item-mark {
   position: absolute;
-  top: -4px;
+  top: -5px;
   left: 0;
-  background-color: basic-white;
+  background-color: @basic-white;
+  border: 1px solid @special-grey;
 
   &--radio {
     width: 30px;
@@ -84,8 +85,8 @@
   }
 
   &--checkbox {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -102,6 +103,7 @@
 
   &--checkbox {
     color: @basic-black;
+    padding-left: 15px;
   }
 }
 
@@ -146,4 +148,191 @@
   align-items: center;
   text-align: center;
   color: @basic-black;
+}
+
+@media (min-width: @tablet-width) {
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper {
+    padding-left: 41px;
+    padding-right: 27px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__label {
+    margin-right: 10px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: @special-dark-grey;
+  }
+
+  .form__input-text {
+    margin-bottom: 20px;
+    padding: 11px 19px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+    align-items: center;
+    text-transform: uppercase;
+    color: @special-dark-grey;
+
+    &--name {
+      width: 567px;
+    }
+  }
+
+  .form__input-text--weight {
+    margin-left: 8px;
+    width: 536px;
+  }
+
+  .form__input-text--age {
+    margin-left: 13px;
+    width: 497px;
+  }
+
+  .form__input-text--email {
+    width: 551px;
+  }
+
+  .form__input-text--tel {
+    width: 535px;
+  }
+
+  .form__textarea {
+    min-width: 631px;
+    min-height: 174px;
+    padding: 10px 19px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @special-dark-grey;
+  }
+
+  .form__radio-wrapper {
+    padding-left: 41px;
+    padding-right: 27px;
+  }
+
+  .form__radio-lists {
+    .list-reset();
+    display: flex;
+    flex-direction: column;
+    border: 1px solid @special-lightgrey;
+  }
+
+  .form__item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 42px;
+  }
+
+  .form__item-input {
+    display: block;
+  }
+
+  .form__item-mark {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: @basic-white;
+    border: 1px solid @special-grey;
+
+    &--radio {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    &--checkbox {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .form__item-option {
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    &--radio {
+      color: @other-dark-grey;
+    }
+
+    &--checkbox {
+      color: @basic-black;
+      padding-left: 15px;
+    }
+  }
+
+  .form__checkbox-title {
+    padding-left: 40px;
+    margin-bottom: 57px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: @basic-black;
+  }
+
+  .form__checkbox-lists {
+    .list-reset();
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px 40px;
+    row-gap: 32px;
+  }
+
+  .form__checkbox-wrapper {
+    padding-left: 40px;
+    margin-bottom: 54px;
+  }
+
+  .form__button-wrapper {
+    margin-bottom: 72px;
+    padding-left: 40px;
+  }
+
+  .form__button {
+    width: 282px;
+    margin-bottom: 21px;
+    padding: 13px 45px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic-white;
+    background-color: @basic-green;
+  }
+
+  .form__legend {
+    margin-left: 65px;
+    font-family: @second-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: @basic-black;
+  }
 }

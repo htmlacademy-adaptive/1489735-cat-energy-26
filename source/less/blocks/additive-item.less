@@ -1,5 +1,14 @@
+.additive-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto auto auto;
+  row-gap: 13px;
+}
+
 .additive-item__title {
   margin: 0;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 16px;
@@ -11,6 +20,8 @@
 }
 
 .additive-item__label {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   font-family: @second-fonts;
   font-weight: 400;
   font-size: 14px;
@@ -21,6 +32,8 @@
 }
 
 .additive-item__value {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
   font-family: @second-fonts;
   font-weight: 400;
   font-size: 14px;
@@ -32,6 +45,8 @@
 
 .additive-item__button {
   width: 280px;
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
   margin-bottom: 19px;
   padding: 10px 109px;
   font-family: @basic-fonts;

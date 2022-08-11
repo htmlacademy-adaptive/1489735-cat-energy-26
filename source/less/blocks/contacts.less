@@ -1,7 +1,10 @@
 .contacts__wrapper {
   .wrapper();
+  display: flex;
+  flex-direction: row;
   padding-top: 26px;
   padding-bottom: 26px;
+  background-color: @basic-white;
 }
 
 .contacts__invitation {
@@ -14,11 +17,76 @@
   color: #111111;
 }
 
-.contacts__adress {
+.contacts__address {
   margin: 0;
   font-family: @second-fonts;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: @special-dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    .wrapper();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contacts__invitation {
+    width: 171px;
+    margin: 0;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #111111;
+  }
+
+  .contacts__adress {
+    width: 160px;
+    margin: 0;
+    font-family: @second-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: @special-dark-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    margin-left: 0;
+    width: 565px;
+    padding: 56px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .contacts__invitation {
+    width: 163px;
+    margin: 0;
+    margin-right: 87px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: @other-black;
+  }
+
+  .contacts__adress {
+    width: 155px;
+    margin: 0;
+    font-family: @second-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: @special-dark-grey;
+  }
 }

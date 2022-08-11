@@ -6,3 +6,33 @@
   line-height: 26px;
   color: @basic-black;
 }
+
+@media (min-width: @tablet-width) {
+  .personal-date__info {
+    margin-bottom: 76px;
+    padding-left: 40px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: @basic-black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .personal-date__group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 67px;
+  }
+
+  .personal-date__info {
+    margin-bottom: 76px;
+    padding-left: 0;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: @basic-black;
+  }
+}
