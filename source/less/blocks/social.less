@@ -1,5 +1,12 @@
 .social__lists {
   .list-reset();
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-top: 1px solid @special--other-grey;
+  border-bottom: 1px solid @special--other-grey;
 }
 
 .social__item {
@@ -28,4 +35,30 @@
 .social__link--telegram {
   width: 20px;
   height: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__lists {
+    .list-reset();
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__lists {
+    .list-reset();
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top: none;
+    border-bottom: none;
+  }
 }

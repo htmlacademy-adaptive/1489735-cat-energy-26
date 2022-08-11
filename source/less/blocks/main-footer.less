@@ -4,6 +4,8 @@
 
 .main-footer__wrapper {
   .wrapper();
+  display: flex;
+  flex-direction: column;
   padding-top: 39px;
   padding-bottom: 22px;
 }
@@ -11,4 +13,32 @@
 .main-footer__logo {
   width: 128px;
   height: 24px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    .wrapper();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 62px;
+    padding-bottom: 65px;
+  }
+
+  .main-footer__logo {
+    width: 132px;
+    height: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    .wrapper();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 62px;
+    padding-bottom: 65px;
+  }
 }

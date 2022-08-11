@@ -1,6 +1,5 @@
 .promo__wrapper {
   .wrapper();
-  margin: auto;
   position: relative;
   width: 320px;
   height: 302px;
@@ -12,7 +11,7 @@
 
 .promo__title {
   margin: 0;
-  padding: 27px 25px;
+  padding: 27px 15px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 36px;
@@ -23,6 +22,7 @@
 
 .promo__slogan {
   margin: 0;
+  margin-bottom: 20px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 14px;
@@ -30,18 +30,6 @@
   text-transform: uppercase;
   text-align: center;
   color: @basic-white;
-}
-
-.promo__slogan::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 280px;
-  height: 270px;
-  top: 167px;
-  background-image: url("../../img/index_box_mobile 1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .promo__button-wrapper {
@@ -62,4 +50,90 @@
   text-transform: uppercase;
   color: @basic-white;
   background-color: @basic-green;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    .wrapper();
+    background-color: @basic-white;
+    background-image: none;
+  }
+
+  .promo__title {
+    margin-left: 87px;
+    width: 414px;
+    padding: 0;
+    padding-top: 62px;
+    padding-bottom: 40px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .promo__slogan {
+    margin-left: 87px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    color: @basic-black;
+  }
+
+  .promo__button {
+    margin-left: 87px;
+    padding: 14px 26px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic-white;
+    background-color: @basic-green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    text-align: start;
+    align-items: center;
+  }
+
+  .promo__title {
+    width: 414px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic-black;
+  }
+
+  .promo__slogan {
+    margin: 0;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
+
+  .promo__button {
+    padding: 14px 26px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: @basic-white;
+    background-color: @basic-green;
+  }
 }

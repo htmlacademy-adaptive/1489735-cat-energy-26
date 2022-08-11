@@ -1,3 +1,20 @@
 .products__lists {
   .list-reset();
 }
+
+@media (min-width: @tablet-width) {
+  .products__lists {
+    .list-reset();
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__lists {
+    .list-reset();
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
+}
