@@ -13,7 +13,7 @@
 
 .form__input-text {
   margin-bottom: 14px;
-  padding: 15px 13px;
+  padding: 13px 15px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 16px;
@@ -38,10 +38,12 @@
 }
 
 .form__input-text--email {
+  margin-left: 8px;
   width: 219px;
 }
 
 .form__input-text--tel {
+  margin-left: 6px;
   width: 204px;
 }
 
@@ -91,6 +93,30 @@
     width: 30px;
     height: 30px;
   }
+}
+
+.form__item-input--radio[type="radio"]:checked + .form__item-mark--radio::after {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: @basic-green;
+  border-radius: 50%;
+  background-position: center;
+  content: "";
+}
+
+.form__item-input--checkbox[type="checkbox"]:checked + .form__item-mark--checkbox::after {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
 }
 
 .form__item-option {
@@ -237,6 +263,10 @@
     padding-left: 28px;
     position: relative;
     margin-bottom: 35px;
+
+    &--checkbox {
+      padding-left: 0;
+    }
   }
 
   .form__item-label {
@@ -306,8 +336,12 @@
     }
   }
 
-  .form__checkbox-title {
+  .form__checkbox-wrapper {
     padding-left: 40px;
+    margin-bottom: 54px;
+  }
+
+  .form__checkbox-title {
     margin-bottom: 57px;
     font-size: 36px;
     line-height: 36px;
@@ -320,11 +354,6 @@
     grid-template-columns: auto auto;
     grid-template-rows: 40px 40px;
     row-gap: 32px;
-  }
-
-  .form__checkbox-wrapper {
-    padding-left: 40px;
-    margin-bottom: 54px;
   }
 
   .form__button-wrapper {
@@ -443,6 +472,10 @@
     position: relative;
     display: block;
     margin-bottom: 34px;
+
+    &--checkbox {
+      padding-left: 0;
+    }
   }
 
   .form__item-mark {

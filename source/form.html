@@ -12,7 +12,8 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logotype_image.svg" width="34" height="38" alt="Логотип компании фото.">
+        <img class="main-header__logo-image" src="img/logotype_image.svg" width="34" height="38"
+          alt="Логотип компании фото.">
         <img class="main-header__logo-text" src="img/logotype_text.svg" width="101" height="18"
           alt="логотип компании энергичный кот">
       </a>
@@ -41,7 +42,6 @@
   <main class="main-inner main-inner--form">
     <div class="main-inner__wrapper">
       <h1 class="main-inner__title">Подбор программы</h1>
-
       <p class="main-inner__info-form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
 
@@ -123,45 +123,46 @@
           </div>
         </div>
 
-        <div class="form__checkbox">
+
+
+        <div class="form__checkbox-wrapper">
           <h3 class="form__checkbox-title">Дополнительно</h3>
-          <div class="form__checkbox-wrapper">
-            <ul class="form__checkbox-lists">
-              <li class="form__item">
-                <label class="form__item-label">
-                  <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox"
-                    id="sweetener" name="sweetener" value="сахарозаменитель" checked>
-                  <span class="form__item-mark form__item-mark--checkbox"></span>
-                  <span class="form__item-option form__item-option--checkbox">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__item-label">
-                  <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="water"
-                    name="water" value="питевая вода">
-                  <span class="form__item-mark form__item-mark--checkbox"></span>
-                  <span class="form__item-option form__item-option--checkbox">питьевая вода</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__item-label">
-                  <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="milk"
-                    name="milk" value="молоко">
-                  <span class="form__item-mark form__item-mark--checkbox"></span>
-                  <span class="form__item-option form__item-option--checkbox">молоко</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__item-label">
-                  <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox"
-                    id="vitamins" name="vitamins" value="витамины">
-                  <span class="form__item-mark form__item-mark--checkbox"></span>
-                  <span class="form__item-option form__item-option--checkbox">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+          <ul class="form__checkbox-lists">
+            <li class="form__item form__item--checkbox">
+              <label class="form__item-label">
+                <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox"
+                  id="sweetener" name="sweetener" value="сахарозаменитель" checked>
+                <span class="form__item-mark form__item-mark--checkbox"></span>
+                <span class="form__item-option form__item-option--checkbox">сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <label class="form__item-label">
+                <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="water"
+                  name="water" value="питевая вода">
+                <span class="form__item-mark form__item-mark--checkbox"></span>
+                <span class="form__item-option form__item-option--checkbox">питьевая вода</span>
+              </label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <label class="form__item-label">
+                <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="milk"
+                  name="milk" value="молоко">
+                <span class="form__item-mark form__item-mark--checkbox"></span>
+                <span class="form__item-option form__item-option--checkbox">молоко</span>
+              </label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <label class="form__item-label">
+                <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="vitamins"
+                  name="vitamins" value="витамины">
+                <span class="form__item-mark form__item-mark--checkbox"></span>
+                <span class="form__item-option form__item-option--checkbox">витамины</span>
+              </label>
+            </li>
+          </ul>
         </div>
+
 
         <div class="form__button-wrapper">
           <button class="form__button  button" type="submit">отправить заявку</button>
@@ -177,7 +178,7 @@
   <footer class="main-footer">
     <div class="contact-maps">
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--other">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>

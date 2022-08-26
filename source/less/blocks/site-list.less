@@ -130,12 +130,12 @@
     color: @basic-black;
 
     &:hover {
-      color: @basic-white;
+      color: @basic-black;
       opacity: 0.6;
     }
 
     &:active {
-      opacity: 0.6;
+      opacity: 0.3;
     }
 
     &:focus {
@@ -145,6 +145,19 @@
 
   .site-list__link--banner {
     color: @basic-white;
+
+    &:hover {
+      color: @basic-white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
   .site-list__item--curent .site-list__link--banner::after {
