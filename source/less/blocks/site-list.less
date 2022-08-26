@@ -117,7 +117,7 @@
         bottom: 0;
         left: 0;
         height: 2px;
-        background-color: @basic-white;
+        background-color: @basic-green;
       }
     }
   }
@@ -131,20 +131,29 @@
 
     &:hover {
       color: @basic-white;
-      opacity: 0.3;
+      opacity: 0.6;
     }
 
     &:active {
-      color: @basic-white;
+      opacity: 0.6;
     }
 
     &:focus {
-      color: @basic-white;
       opacity: 0.7;
     }
   }
 
-  .site-list__link-banner {
+  .site-list__link--banner {
     color: @basic-white;
+  }
+
+  .site-list__item--curent .site-list__link--banner::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: @basic-white;
   }
 }

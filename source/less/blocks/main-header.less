@@ -1,13 +1,14 @@
-.main-header {
+.main-header__wrapper {
+  .wrapper();
   display: flex;
   flex-direction: column;
   background-color: @basic-white;
+  box-sizing: border-box;
 }
 
 .main-header__logo {
   display: inline-block;
   margin-top: 10px;
-  padding-left: 20px;
   height: 65px;
 }
 
@@ -23,7 +24,6 @@
   }
 
   .main-header__logo {
-    padding-left: 30px;
     margin-top: 24px;
     width: 180px;
     height: 52px;
@@ -57,7 +57,6 @@
   }
 
   .main-header__logo {
-    padding-left: 110px;
     margin-top: 53px;
     width: 210px;
     height: 59px;
