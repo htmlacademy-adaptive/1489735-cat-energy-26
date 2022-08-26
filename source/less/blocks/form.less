@@ -11,6 +11,10 @@
   color: @special-dark-grey;
 }
 
+.form__wrapper {
+  position: relative;
+}
+
 .form__input-text {
   margin-bottom: 14px;
   padding: 13px 15px;
@@ -21,19 +25,21 @@
   align-items: center;
   text-transform: uppercase;
   color: @special-dark-grey;
+  border: 1px solid @special-lightgrey;
 
   &--name {
+    margin-left: 10px;
     width: 229px;
   }
 }
 
 .form__input-text--weight {
-  margin-left: 8px;
+  margin-left: 14px;
   width: 204px;
 }
 
 .form__input-text--age {
-  margin-left: 4px;
+  margin-left: 14px;
   width: 172px;
 }
 
@@ -46,6 +52,17 @@
   margin-left: 6px;
   width: 204px;
 }
+
+// .form__input-text--email::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 18px;
+//   height: 10px;
+//   background-image: url("../img/icon_email.svg");
+//   background-repeat: no-repeat;
+// }
 
 .form__textarea {
   min-width: 280px;
@@ -61,6 +78,9 @@
 
 .form__radio-lists {
   .list-reset();
+  padding-top: 22px;
+  border-top: 1px solid @special--other-grey;
+  border-bottom: 1px solid @special--other-grey;
 }
 
 .form__item {
