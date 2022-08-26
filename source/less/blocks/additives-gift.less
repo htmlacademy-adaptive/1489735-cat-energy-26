@@ -1,7 +1,7 @@
 .additives-gift {
   width: 280px;
   height: 290px;
-  background-color: @basic-black;
+  background-color: @basic-green;
   background-image: url("../img/gift.jpg");
   background-size: 280px auto;
   background-repeat: no-repeat;
@@ -16,4 +16,41 @@
   align-items: center;
   text-align: center;
   color: @basic-white;
+}
+
+@media (min-width: @tablet-width) {
+  .additives-gift {
+    margin-top: 97px;
+    width: 707px;
+    height: 200px;
+    background-color: @basic-green;
+    background-image: url("../img/gift.jpg");
+    background-size: 707px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .additives-gift__slogan {
+    padding: 71px 124px 69px 422px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additives-gift {
+    margin-top: 0;
+    margin-left: 80px;
+    width: 244px;
+    height: 288px;
+    background-color: @basic-green;
+    background-image: url("../img/gift.jpg");
+    background-size: 244px 288px;
+    background-repeat: no-repeat;
+  }
+
+  .additives-gift__slogan {
+    padding: 184px 61px 43px 48px;
+    align-items: center;
+    text-align: center;
+  }
 }

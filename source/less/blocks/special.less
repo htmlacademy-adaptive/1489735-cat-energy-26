@@ -55,6 +55,7 @@
   line-height: 24px;
   text-align: center;
   color: @basic-black;
+  margin-bottom: 9px;
 }
 
 .special__text {
@@ -87,7 +88,6 @@
   }
 
   .special__wrapper {
-    .wrapper();
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -125,6 +125,7 @@
   }
 
   .special__value {
+    padding-top: 15px;
     font-family: @basic-fonts;
     font-weight: 400;
     font-size: 30px;
@@ -135,8 +136,8 @@
   }
 
   .special__text {
+    width: 114px;
     margin: 0;
-    margin-bottom: 20px;
     font-family: @second-fonts;
     font-weight: 400;
     font-size: 14px;
@@ -144,6 +145,10 @@
     align-items: center;
     text-align: center;
     color: @special-dark-grey;
+  }
+
+  .special__text-day {
+    width: 142px;
   }
 
   .special__expenses {
@@ -164,7 +169,6 @@
 
 @media (min-width: @desktop-width) {
   .special__wrapper {
-    .wrapper();
     display: flex;
     flex-direction: column;
     background: linear-gradient(@basic-white 205px, @basic-grey 205px);
@@ -198,7 +202,6 @@
 
   .special__text {
     margin: 0;
-    margin-bottom: 47px;
     font-family: @second-fonts;
     font-weight: 400;
     font-size: 14px;

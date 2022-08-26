@@ -10,3 +10,35 @@
   text-align: center;
   color: @basic-black;
 }
+
+@media (min-width: @tablet-width) {
+  .additives__lists {
+    border: 1px solid @special-grey;
+  }
+
+  .additives__title {
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    color: @basic-black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additives-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additives__lists {
+    width: 895px;
+    border: none;
+    border-top: 1px solid @special-grey;
+  }
+
+  .additives__title {
+    padding-left: 0;
+  }
+}
