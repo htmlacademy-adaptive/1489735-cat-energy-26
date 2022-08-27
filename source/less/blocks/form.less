@@ -1,3 +1,7 @@
+.form__wrapper {
+  .wrapper();
+}
+
 .form__group {
   margin-bottom: 24px;
 }
@@ -11,7 +15,7 @@
   color: @special-dark-grey;
 }
 
-.form__wrapper {
+.form__wrapper-field {
   position: relative;
 }
 
@@ -200,21 +204,19 @@
 
 @media (min-width: @tablet-width) {
   .form__group {
+    padding-left: 41px;
+    padding-right: 37px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
-  .form__wrapper {
-    padding-left: 41px;
-    padding-right: 27px;
+  .form__wrapper-field {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .form__label {
-    margin-right: 10px;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -239,12 +241,10 @@
   }
 
   .form__input-text--weight {
-    margin-left: 8px;
     width: 536px;
   }
 
   .form__input-text--age {
-    margin-left: 13px;
     width: 497px;
   }
 
@@ -269,6 +269,7 @@
   .form__radio-wrapper {
     padding-left: 41px;
     padding-right: 27px;
+    margin-bottom: 75px;
   }
 
   .form__radio-lists {
@@ -411,9 +412,18 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 69px;
   }
 
-  .form__wrapper {
+  .form__group {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .form__wrapper-field {
     padding-left: 0;
     padding-right: 0;
     display: flex;
@@ -421,7 +431,7 @@
     margin-right: 78px;
   }
 
-  .form__wrapper:last-child {
+  .form__wrapper-field:last-child {
     margin-right: 0;
   }
 
@@ -477,6 +487,7 @@
   .form__radio-wrapper {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 0;
   }
 
   .form__radio-lists {

@@ -1,20 +1,33 @@
+.products__wrapper {
+  margin-bottom: 25px;
+}
+
 .products__lists {
   .list-reset();
 }
 
 @media (min-width: @tablet-width) {
+  .products__wrapper {
+    .wrapper();
+    margin-bottom: 68px;
+  }
+
   .products__lists {
     .list-reset();
     display: grid;
     grid-template-columns: 324px 324px;
-    column-gap: 60px;
+    gap: 68px 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .products__wrapper {
+    margin-bottom: 75px;
+  }
+
   .products__lists {
     .list-reset();
     grid-template-columns: repeat(4, 245px);
-    column-gap: 80px;
+    gap: 80px 63px;
   }
 }
