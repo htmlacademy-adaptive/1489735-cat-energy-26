@@ -31,6 +31,7 @@
   width: 50px;
   height: 50px;
   background-image: url("../img/cat_back_slim.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item--pro::before {
@@ -41,6 +42,7 @@
   width: 67px;
   height: 50px;
   background-image: url("../img/cat_back_muscle.svg");
+  background-repeat: no-repeat;
 }
 
 .features__title {
@@ -86,34 +88,42 @@
 
   .features__item--slim {
     margin-bottom: 30px;
+    padding: 77px 325px 57px 50px;
   }
 
   .features__item--slim::before {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 24px;
-    width: 50px;
-    height: 50px;
+    top: 81px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
     background-image: url("../img/cat_back_slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .features__item--pro::before {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 22px;
-    width: 67px;
-    height: 50px;
+    top: 91px;
+    left: 410px;
+    width: 280px;
+    height: 200px;
     background-image: url("../img/cat_back_muscle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .features__title {
     margin: 0;
+    padding-left: 0;
+    font-family: @basic-fonts;
+    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: start;
     color: @basic-black;
   }
 
@@ -121,6 +131,8 @@
     margin: 0;
     margin-top: 24px;
     margin-bottom: 52px;
+    font-family: @second-fonts;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: @special-dark-grey;
@@ -153,6 +165,40 @@
   .features__item--slim {
     margin-bottom: 0;
     margin-right: 80px;
+  }
+
+  .features__item--slim::before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 106px;
+    background-image: url("../img/cat_back_slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--pro::before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 52px;
+    width: 134px;
+    height: 100px;
+    background-image: url("../img/cat_back_muscle.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__title {
+    margin: 0;
+    padding-left: 79px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic-black;
   }
 
   .features__description {
