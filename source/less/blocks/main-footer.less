@@ -16,18 +16,31 @@
   margin-bottom: 32px;
 }
 
+.main-footer__logo-text {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 62px;
-    padding-bottom: 65px;
+    padding-top: 46px;
+    padding-bottom: 47px;
   }
 
   .main-footer__logo {
     width: 132px;
     height: 22px;
+    margin-bottom: 0;
+  }
+
+  .main-footer__logo-text {
+    transform: none;
+    left: 0;
+    position: relative;
   }
 }
 

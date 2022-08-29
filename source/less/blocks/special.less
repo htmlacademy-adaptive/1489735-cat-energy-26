@@ -1,5 +1,6 @@
 .special {
   background-color: @other-grey;
+  padding-top: 25px;
 }
 
 .special__wrapper {
@@ -10,7 +11,6 @@
 .special__title {
   margin: 0;
   margin-bottom: 40px;
-  padding-top: 25px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 36px;
@@ -84,7 +84,10 @@
 
 @media (min-width: @tablet-width) {
   .special {
-    background-color: @basic-white;
+    width: 100%;
+    background: linear-gradient(@basic-white 420px, @basic-grey 420px);
+    padding-top: 43px;
+    border-top: 1px solid #e6e6e6;
   }
 
   .special__wrapper {
@@ -97,7 +100,6 @@
   .special__title {
     margin: 0;
     margin-bottom: 63px;
-    padding-top: 43px;
     font-family: @basic-fonts;
     font-weight: 400;
     font-size: 60px;
@@ -168,21 +170,22 @@
 }
 
 @media (min-width: @desktop-width) {
+  .special {
+    width: 100%;
+    background: linear-gradient(@basic-white 205px, @basic-grey 205px);
+    padding-top: 69px;
+    border-top: 0;
+  }
+
   .special__wrapper {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(@basic-white 205px, @basic-grey 205px);
   }
 
 
   .special__title {
     margin: 0;
     margin-bottom: 76px;
-    padding-top: 69px;
-    font-family: @basic-fonts;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
     text-align: left;
     color: @basic-black;
   }
@@ -193,8 +196,6 @@
     display: flex;
     margin-bottom: 70px;
     padding-top: 70px;
-    font-family: @second-fonts;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: @special-dark-grey;

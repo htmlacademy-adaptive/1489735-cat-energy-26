@@ -1,3 +1,7 @@
+.advantages {
+  padding-top: 20px;
+}
+
 .advantages__wrapper {
   .wrapper();
 }
@@ -6,6 +10,7 @@
   .list-reset();
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -39,7 +44,6 @@
 
 .advantages__title {
   margin: 0;
-  margin-top: 20px;
   margin-bottom: 40px;
   font-family: @basic-fonts;
   font-weight: 400;
@@ -53,13 +57,17 @@
   width: 200px;
   margin: 0;
   font-family: @second-fonts;
-  font-style: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    padding-top: 45px;
+  }
+
   .advantages__lists {
     .list-reset();
     display: flex;
@@ -68,13 +76,38 @@
   }
 
   .advantages__item {
-    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    margin-right: 100px;
+    padding-left: 0;
+
+    &--leaf {
+      background-image: url("../img/leaf.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--tub {
+      background-image: url("../img/tub.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--eat {
+      background-image: url("../img/eat.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--alarm {
+      background-image: url("../img/alarm.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .advantages__title {
     margin: 0;
-    margin-top: 45px;
     margin-bottom: 40px;
+    font-family: @basic-fonts;
+    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -82,8 +115,10 @@
   }
 
   .advantages__description {
-    width: 250px;
+    width: 245px;
     margin: 0;
+    font-family: @second-fonts;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: @special-dark-grey;
@@ -91,9 +126,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages {
+    padding-top: 71px;
+  }
+
   .advantages__wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .advantages__lists {
@@ -105,7 +145,6 @@
   }
 
   .advantages__title {
-    margin-top: 45px;
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
