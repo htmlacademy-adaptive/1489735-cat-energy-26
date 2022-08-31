@@ -17,6 +17,8 @@
   text-align: left;
   text-transform: uppercase;
   color: @other-dark-grey;
+  padding-top: 13px;
+  border-top: 1px solid @special-grey;
 }
 
 .additive-item__label {
@@ -59,4 +61,102 @@
   color: @basic-white;
   background-color: @basic-green;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .additive-item {
+    padding-left: 38px;
+    display: grid;
+    grid-template-columns: 310px 160px 60px;
+    grid-template-rows: auto auto;
+    gap: 25px 49px;
+    border-bottom: 1px solid @special-grey;
+  }
+
+  .additive-item__title {
+    margin: 0;
+    padding-top: 25px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    border-top: 0;
+  }
+
+  .additive-item__label {
+    padding-top: 28px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: right;
+  }
+
+  .additive-item__value {
+    padding-top: 28px;
+    grid-column: 3 / -1;
+    grid-row: 1 /  2;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: right;
+    color: @special-dark-grey;
+  }
+
+  .additive-item__button {
+    width: 632px;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    margin-bottom: 28px;
+    padding: 12px 220px;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additive-item {
+    width: 895px;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 280px 145px 80px 244px;
+    grid-template-rows: none;
+    gap: 0 48px;
+  }
+
+  .additive-item__title {
+    margin: 0;
+    grid-column: 1 / 2;
+    align-items: start;
+    text-align: left;
+  }
+
+  .additive-item__label {
+    grid-column: 2 / 3;
+    align-items: center;
+    text-align: right;
+    color: @special-dark-grey;
+  }
+
+  .additive-item__value {
+    grid-column: 3 / 4;
+    align-items: center;
+    text-align: right;
+  }
+
+  .additive-item__button {
+    width: 244px;
+    grid-column: 4 / -1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 10px 26px;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+  }
 }

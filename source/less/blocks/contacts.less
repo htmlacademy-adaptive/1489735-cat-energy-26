@@ -5,6 +5,10 @@
   padding-top: 26px;
   padding-bottom: 26px;
   background-color: @basic-white;
+
+  &--other {
+    background-color: @basic-grey;
+  }
 }
 
 .contacts__invitation {
@@ -14,7 +18,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: @other-black;
 }
 
 .contacts__address {
@@ -28,63 +32,59 @@
 
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
-    .wrapper();
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .contacts__invitation {
     width: 171px;
     margin: 0;
-    font-family: @basic-fonts;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #111111;
-  }
-
-  .contacts__adress {
-    width: 160px;
-    margin: 0;
-    font-family: @second-fonts;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: @special-dark-grey;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contacts__wrapper {
-    margin-left: 0;
-    width: 565px;
-    padding: 56px 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-  }
-
-  .contacts__invitation {
-    width: 163px;
-    margin: 0;
-    margin-right: 87px;
-    font-family: @basic-fonts;
-    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
     color: @other-black;
   }
 
-  .contacts__adress {
+  .contacts__address {
+    width: 160px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: @special-dark-grey;
+  }
+
+  .contacts__address-sity {
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    width: 565px;
+    margin-left: 110px;
+    margin-top: 95px;
+    padding: 56px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: @basic-white;
+  }
+
+  .contacts__invitation {
+    width: 163px;
+    margin: 0;
+    margin-right: 87px;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: @other-black;
+  }
+
+  .contacts__address {
     width: 155px;
     margin: 0;
-    font-family: @second-fonts;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: @special-dark-grey;

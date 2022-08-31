@@ -1,9 +1,12 @@
 .main-inner {
-  .wrapper();
   background-color: @basic-white;
-  padding-top: 27px;
-  padding-bottom: 32px;
 }
+
+.main-inner__wrapper {
+  .wrapper();
+  margin-top: 27px;
+}
+
 
 .main-inner__title {
   margin: 0;
@@ -27,8 +30,12 @@
 
 @media (min-width: @tablet-width) {
   .main-inner__wrapper {
-    padding-left: 30px;
-    padding-right: 27px;
+    margin-top: 64px;
+
+    &--form {
+      padding-left: 71px;
+      padding-right: 67px;
+    }
   }
 
   .main-inner__title {
@@ -52,14 +59,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-inner__wrap {
-    padding-left: 0;
-    padding-right: 0;
+  .main-inner__wrapper {
+    margin-top: 64px;
+
+    &--form {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
   }
 
-  .main-inner__title {
-    font-family: @basic-fonts;
-    font-weight: 400;
+  .main-inner_title {
     font-size: 60px;
     line-height: 60px;
     color: @basic-black;
