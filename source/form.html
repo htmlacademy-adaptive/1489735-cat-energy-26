@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,10 +16,14 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logotype_image.svg" width="34" height="38"
+        <picture>
+          <source  media="(min-width: 1440px)" srcset="img/logotype_image_desktop.svg">
+          <source  media="(min-width: 768px" srcset="img/logotype_image_tablet.svg">
+        <img class="main-header__logo-image" src="img/logotype_image_mobile.svg" width="34" height="38"
           alt="Логотип компании фото.">
-        <img class="main-header__logo-text" src="img/logotype_text.svg" width="101" height="18"
+        <img class="main-header__logo-text" src="img/logotype_text_mobile.svg" width="101" height="18"
           alt="логотип компании энергичный кот">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -184,15 +192,22 @@
 
     <section class="location">
       <h2 class="visually-hidden">Карта с местоположением</h2>
-      <img class="location__maps" src="img/maps.jpg" width="320" height="362" alt="Карта местонахождения магазина.">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003404!2d30.3208587164867!3d59.93871916905368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1661713190233!5m2!1sru!2s"
+        width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </div>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo">
-        <img class="footer-logo" src="img/logotype_text.svg" width="101" height="18"
+        <picture>
+          <source  media="(min-width: 1440px)" srcset="">
+          <source  media="(min-width: 768px)" srcset="">
+        <img class="footer-logo" src="img/footer_logo_text.svg" width="101" height="18"
           alt="Логотип компании энергичный кот.">
+        </picture>
       </a>
       <div class="main-footer__social social">
         <ul class="social__lists">

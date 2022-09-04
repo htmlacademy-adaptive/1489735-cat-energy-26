@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,10 +16,14 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logotype_image.svg" width="34" height="38"
+        <picture>
+          <source  media="(min-width: 1440px)" srcset="img/logotype_image_desktop.svg">
+          <source  media="(min-width: 768px)" srcset="img/logotype_image_tablet.svg">
+        <img class="main-header__logo-image" src="img/logotype_image_mobile.svg" width="34" height="38"
           alt="Логотип компании фото.">
-        <img class="main-header__logo-text" src="img/logotype_text.svg" width="101" height="18"
+        <img class="main-header__logo-text" src="img/logotype_text_mobile.svg" width="101" height="18"
           alt="логотип компании энергичный кот">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -49,8 +57,12 @@
         <ul class="products__lists">
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_chicken_500_1x.png" width="68" height="86"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/chicken_desktop_500.png 1x, img/goods/chicken_desktop_500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/chicken_tablet_500.png 1x, img/goods/chicken_tablet_500@2x.png 2x">
+              <img class="product-item__image" src="img/goods/chicken_mobile_500.png 1x" srcset="img/goods/chicken_mobile_500@2x.png 2x" width="68" height="86"
                 alt="Пакет с курицей на 500 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy PRO 500 г</h3>
               <ul class="product-item__lists-info info-list">
                 <li class="info-list__item">
@@ -72,8 +84,12 @@
 
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_chicken_1000_1x.png" width="84" height="100"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/chicken_dektop_1000.png 1x, img/goods/chicken_desktop_1000@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/chicken_tablet_1000.png 1x, img/goods/chicken_tablet_1000@2x.png 2x">
+              <img class="product-item__image" src="img/goods/chicken_mobile_1000.png 1x" srcset="img/goods/chicken_mobile_1000@2x.png 2x" width="84" height="100"
                 alt="Пакет с курицей на 1000 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy PRO 1000 г</h3>
               <ul class="product-item__lists-info info-list">
                 <li class="info-list__item">
@@ -95,8 +111,12 @@
 
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_fish_500_1x.png" width="68" height="86"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/fish_desktop_500.png 1x,img/goods/fish_desktop_500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/fish_tablet_500.png 1x, img/goods/fish_tablet_500@2x.png 2x">
+              <img class="product-item__image" src="img/goods/fish_mobile_500.png 1x" srcset="img/goods/fish_mobile_500@2x.png 2x" width="68" height="86"
                 alt="Пакет с рыбой на 500 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy PRO 500 г</h3>
               <ul class="product-item__lists-info info-list">
                 <li class="info-list__item">
@@ -118,8 +138,12 @@
 
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_fish_1000_1x.png" width="84" height="100"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/fish_desktop_1000.png 1x, img/goods/fish_desktop_1000@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/fish_tablet_1000.png 1x, img/goods/fish_tablet_1000@2x.png 2x">
+              <img class="product-item__image" src="img/goods/fish_mobile_1000.png 1x" srcset="img/goods/fish_mobile_1000@2x.png 2x" width="84" height="100"
                 alt="Пакет с рыбой на 1000 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy PRO 500 г</h3>
               <ul class="product-item__lists-info info-list">
                 <li class="info-list__item">
@@ -141,8 +165,12 @@
 
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_buckwheat_500_1x.png" width="68" height="86"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/buckwheat_desktop_500.png 1x, img/goods/buckwheat_desktop_500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/buckwheat_tablet_500.png 1x, img/goods/buckwheat_tablet_500@2x.png 2x">
+              <img class="product-item__image" src="img/goods/buckwheat_mobile_500.png 1x" srcset="img/goods/buckwheat_mobile_500@2x.png 2x" width="68" height="86"
                 alt="Пакет с гречкой на 500 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy slim 500 г</h3>
               <ul class="product-item__lists-info  info-list">
                 <li class="info-list__item">
@@ -164,8 +192,12 @@
 
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_buckwheat_1000_1x.png" width="84" height="100"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/buckwheat_desktop_1000.png 1x, img/goods/buckwheat_desktop_1000@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/buckwheat_tablet_1000.png 1x, img/goods/buckwheat_tablet_1000@2x.png 2x">
+              <img class="product-item__image" src="img/goods/buckwheat_mobile_1000.png 1x" srcset="img/goods/buckwheat_mobile_1000@2x.png 2x"width="84" height="100"
                 alt="Пакет с гречкой на 1000 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy slim 1000 г</h3>
               <ul class="product-item__lists-info info-list">
                 <li class="info-list__item">
@@ -187,8 +219,12 @@
 
           <li class="products__items product-item">
             <div class="product-item__wrapper">
-              <img class="product-item__image" src="img/goods/pack_rice_500_1x.png" width="68" height="86"
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/goods/rice_desktop_500.png 1x, img/goods/rice_desktop_500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/goods/rice_tablet_500.png 1x, img/goods/rice_tablet_500@2x.png 2x">
+              <img class="product-item__image" src="img/goods/rice_mobile_500.png 1x" srcset="img/goods/rice_mobile_500@2x.png 2x" width="68" height="86"
                 alt="Пакет с рисом на 500 г">
+              </picture>
               <h3 class="product-item__title">Cat Energy slim 500 г</h3>
               <ul class="product-item__lists-info info-list">
                 <li class="info-list__item">
@@ -271,13 +307,20 @@
 
     <section class="location">
       <h2 class="visually-hidden">Карта с местоположением</h2>
-      <img class="location__maps" src="img/maps.jpg" width="320" height="362" alt="Карта местонахождения магазина.">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003404!2d30.3208587164867!3d59.93871916905368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1661713190233!5m2!1sru!2s"
+        width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo">
-          <img class="footer-logo" src="img/logotype_text.svg" width="101" height="18"
+          <picture>
+            <source  media="(min-width: 1440px)" srcset="">
+            <source  media="(min-width: 768px)" srcset="">
+          <img class="footer-logo" src="img/footer_logo_text.svg" width="101" height="18"
             alt="Логотип компании энергичный кот.">
+          </picture>
         </a>
 
         <div class="main-footer__social  social">

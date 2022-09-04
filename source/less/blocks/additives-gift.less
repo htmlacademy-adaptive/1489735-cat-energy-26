@@ -1,13 +1,28 @@
 .additives-gift {
+  position: relative;
   width: 280px;
   height: 290px;
   background-color: @basic-green;
-  background-image: url("../img/gift.jpg");
+  background-image: url("../img/gift_mobile.jpg");
   background-size: 280px auto;
   background-repeat: no-repeat;
 }
 
+.additives-gift::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 84px;
+  top: 58px;
+  left: 101px;
+  background-image: url("../img/icon_gift.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
 .additives-gift__slogan {
+  margin: 0;
   padding: 187px 61px 43px 58px;
   font-family: @second-fonts;
   font-weight: 400;
@@ -24,8 +39,20 @@
     width: 707px;
     height: 200px;
     background-color: @basic-green;
-    background-image: url("../img/gift.jpg");
+    background-image: url("../img/gift_tablet.jpg");
     background-size: 707px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .additives-gift::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 84px;
+    top: 58px;
+    left: 77px;
+    background-image: url("../img/icon_gift.svg");
+    background-position: top center;
     background-repeat: no-repeat;
   }
 
@@ -43,13 +70,25 @@
     width: 244px;
     height: 288px;
     background-color: @basic-green;
-    background-image: url("../img/gift.jpg");
+    background-image: url("../img/gift_desktop.jpg");
     background-size: 244px 288px;
     background-repeat: no-repeat;
   }
 
+  .additives-gift::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 84px;
+    top: 55px;
+    left: 82px;
+    background-image: url("../img/icon_gift.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
   .additives-gift__slogan {
-    padding: 184px 61px 43px 48px;
+    padding: 184px 42px 42px;
     align-items: center;
     text-align: center;
   }
