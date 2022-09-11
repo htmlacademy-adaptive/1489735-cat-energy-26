@@ -66,7 +66,7 @@
   line-height: 18px;
   color: @special-dark-grey;
   padding-bottom: 23px;
-  border-bottom: 1px solid @special--other-grey;
+  border-bottom: 1px solid @special-other-grey;
 }
 
 .features__link {
@@ -78,6 +78,26 @@
   text-transform: uppercase;
   color: @basic-black;
   text-decoration: none;
+}
+
+.features__link:active {
+  opacity: 0.3;
+}
+
+.features__link-icon {
+  margin-left: 15px;
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: transform 0.5s;
+}
+
+.features__link-icon:hover {
+  transform: scaleX(1.4);
+}
+
+.features__link-icon:active {
+  color: @basic-black;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
