@@ -20,6 +20,7 @@
 }
 
 .form__input-text {
+  position: relative;
   margin-bottom: 14px;
   padding: 13px 15px;
   font-family: @basic-fonts;
@@ -57,16 +58,40 @@
   width: 204px;
 }
 
-// .form__input-text--email::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   width: 18px;
-//   height: 10px;
-//   background-image: url("../img/icon_email.svg");
-//   background-repeat: no-repeat;
-// }
+.form__input-text-icon--mail {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  stroke: @other-dark-grey;
+  fill: @basic-white;
+}
+
+.form__input-text-icon--mail:hover,
+.form__input-text-icon--mail:active {
+  stroke: @other-dark-grey;
+}
+
+.form__input-text-icon--mail:focus {
+  stroke: @basic-green;
+}
+
+.form__input-text-icon--phone {
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  stroke: @other-dark-grey;
+  fill: @basic-white;
+}
+
+.form__input-text-icon--phone:hover,
+.form__input-text-icon--phone:active {
+  stroke: @other-dark-grey;
+}
+
+.form__input-text-icon--phone:focus {
+  stroke: @basic-green;
+}
+
 
 .form__textarea {
   min-width: 280px;
@@ -83,8 +108,8 @@
 .form__radio-lists {
   .list-reset();
   padding-top: 22px;
-  border-top: 1px solid @special--other-grey;
-  border-bottom: 1px solid @special--other-grey;
+  border-top: 1px solid @special-other-grey;
+  border-bottom: 1px solid @special-other-grey;
 }
 
 .form__item {
@@ -254,6 +279,40 @@
 
   .form__input-text--tel {
     width: 535px;
+  }
+
+  .form__input-text-icon--mail {
+    position: absolute;
+    top: 19px;
+    right: 28px;
+    stroke: @other-dark-grey;
+    fill: @basic-white;
+  }
+
+  .form__input-text-icon--mail:hover,
+  .form__input-text-icon--mail:active {
+    stroke: @other-dark-grey;
+  }
+
+  .form__input-text-icon--mail:focus {
+    stroke: @basic-green;
+  }
+
+  .form__input-text-icon--phone {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    stroke: @other-dark-grey;
+    fill: @basic-white;
+  }
+
+  .form__input-text-icon--phone:hover,
+  .form__input-text-icon--phone:active {
+    stroke: @other-dark-grey;
+  }
+
+  .form__input-text-icon--phone:focus {
+    stroke: @basic-green;
   }
 
   .form__textarea {
@@ -443,7 +502,7 @@
 
   .form__input-text {
     margin-bottom: 14px;
-    padding: 9px 13px;
+    padding: 9px 18px;
     align-items: center;
     text-transform: uppercase;
     color: @special-dark-grey;
@@ -472,6 +531,18 @@
   .form__input-text--tel {
     margin-left: 15px;
     width: 472px;
+  }
+
+  .form__input-text:hover {
+    outline: 1px solid @special-grey;
+  }
+
+  .form__input-text:focus {
+    outline: 2px solid @special-dark-grey;
+  }
+
+  .form__input-text:invalid {
+    outline: 2px solid #ff8282;
   }
 
   .form__textarea {
@@ -554,17 +625,17 @@
   }
 
   .form__item-label:hover .form__item-mark--radio {
-    border: 1px solid #bababa;
+    outline: 1px solid #bababa;
   }
 
   .form__item-label:disabled .form__item-mark--radio::after {
-    border: 1px solid #bababa;
+    outline: 1px solid #bababa;
     background-color: @basic-green;
     opacity: 0.3;
   }
 
   .form__item-label:hover .form__item-mark--checkbox {
-    border: 1px solid #bababa;
+    outline: 1px solid #bababa;
   }
 
   .form__item-label:disabled .form__item-mark--checkbox::after {
