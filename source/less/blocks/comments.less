@@ -6,22 +6,17 @@
 .comments::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 50%;
-  right: 50%;
-  width: 100vw;
-  margin-right: -50vw;
-  margin-left: -50vw;
+  top: 40px;
+  width: 1000%;
   height: 2px;
   background-color: @basic-green;
-  z-index: 1;
-}
-
-.comments__wrapper {
-  margin-bottom: 23px;
+  z-index: -1;
 }
 
 .comments__info {
+  display: inline-block;
+  padding: 0 20px;
+  margin-left: -20px;
   margin-bottom: 37px;
   font-family: @basic-fonts;
   font-weight: 400;
@@ -36,6 +31,7 @@
   .comments {
     position: relative;
     display: block;
+    margin-bottom: 65px;
   }
 
   .comments::before {
@@ -49,15 +45,18 @@
     margin-left: -50vw;
     height: 2px;
     background-color: @basic-green;
-    z-index: 1;
+    z-index: -1;
   }
 
   .comments__wrapper {
     padding-left: 40px;
-    margin-bottom: 65px;
   }
 
   .comments__info {
+    display: inline-block;
+    padding: 0 40px;
+    margin-left: 0;
+    margin-top: 0;
     margin-bottom: 76px;
     padding-left: 40px;
     font-size: 36px;
@@ -85,7 +84,7 @@
     margin-left: -50vw;
     height: 2px;
     background-color: @basic-green;
-    z-index: 1;
+    z-index: -1;
   }
 
   .comments__wrapper {
@@ -94,8 +93,10 @@
   }
 
   .comments__info {
+    display: inline-block;
+    padding: 0 40px;
+    margin-left: -40px;
     margin-bottom: 76px;
-    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
     color: @basic-black;

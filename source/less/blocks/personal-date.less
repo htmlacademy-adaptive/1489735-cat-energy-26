@@ -1,23 +1,21 @@
 .personal-date {
   position: relative;
-  display: block;
 }
 
 .personal-date::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 50%;
-  right: 50%;
-  width: 100vw;
-  margin-right: -50vw;
-  margin-left: -50vw;
+  top: 40px;
+  width: 1000%;
   height: 2px;
   background-color: @basic-green;
-  z-index: 1;
+  z-index: -1;
 }
 
 .personal-date__info {
+  display: inline-block;
+  padding: 0 20px;
+  margin-left: -20px;
   margin-bottom: 35px;
   font-family: @basic-fonts;
   font-weight: 400;
@@ -26,37 +24,41 @@
   color: @basic-black;
   background-color: @basic-white;
   z-index: 2;
+  width: 224px;
 }
 
 @media (min-width: @tablet-width) {
   .personal-date {
     position: relative;
-    display: block;
+    margin-bottom: 67px;
   }
 
   .personal-date::before {
     content: "";
     position: absolute;
     top: 20px;
+    height: 2px;
     left: 50%;
     right: 50%;
     width: 100vw;
     margin-right: -50vw;
     margin-left: -50vw;
-    height: 2px;
     background-color: @basic-green;
-    z-index: 1;
+    z-index: -1;
   }
 
   .personal-date__group {
     font-family: @basic-fonts;
     font-weight: 400;
-    margin-bottom: 67px;
     padding-left: 41px;
     padding-right: 37px;
   }
 
   .personal-date__info {
+    display: inline-block;
+    width: 600px;
+    padding: 0 40px;
+    margin-left: 0;
     margin-top: 0;
     margin-bottom: 76px;
     padding-left: 40px;
@@ -75,7 +77,7 @@
     position: relative;
   }
 
-  .personal-date__info::before {
+  .personal-date::before {
     content: "";
     position: absolute;
     top: 20px;
@@ -86,7 +88,7 @@
     margin-right: -50vw;
     margin-left: -50vw;
     background-color: @basic-green;
-    z-index: 1;
+    z-index: -1;
   }
 
   .personal-date__group {
@@ -98,8 +100,11 @@
   }
 
   .personal-date__info {
+    display: inline-block;
+    width: 600px;
+    padding: 0 40px;
+    margin-left: -40px;
     margin-bottom: 76px;
-    padding-left: 0;
     padding-right: 0;
     background-color: @basic-white;
     z-index: 2;
