@@ -15,7 +15,7 @@
 
   &--slim {
     margin-bottom: 20px;
-    padding: 30px 22px 22px;
+    padding: 30px 20px 22px;
   }
 
   &--pro {
@@ -26,8 +26,8 @@
 .features__item--slim::before {
   content: "";
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 20px;
+  left: 20px;
   width: 50px;
   height: 50px;
   background-image: url("../img/cat_slim_mobile.svg");
@@ -37,8 +37,8 @@
 .features__item--pro::before {
   content: "";
   position: absolute;
-  top: 24px;
-  left: 22px;
+  top: 22px;
+  left: 14px;
   width: 67px;
   height: 50px;
   background-image: url("../img/cat_muscle_mobile.svg");
@@ -47,7 +47,7 @@
 
 .features__title {
   margin: 0;
-  padding-left: 79px;
+  padding-left: 70px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 24px;
@@ -58,14 +58,14 @@
 
 .features__description {
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 19px;
+  margin-top: 29px;
+  margin-bottom: 17px;
   font-family: @second-fonts;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
-  padding-bottom: 23px;
+  padding-bottom: 0;
   border-bottom: 1px solid @special-other-grey;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .features__link-icon {
-  margin-left: 15px;
+  margin-left: 22px;
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;
@@ -101,9 +101,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .features__item {
+  .features__item--pro {
     background-color: @basic-grey;
-    padding: 77px 320px 57px 50px;
+    padding: 77px 310px 57px 52px;
   }
 
   .features__item--slim {
@@ -114,7 +114,7 @@
   .features__item--slim::before {
     content: "";
     position: absolute;
-    top: 81px;
+    top: 82px;
     left: 446px;
     width: 200px;
     height: 211px;
@@ -149,7 +149,7 @@
 
   .features__description {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 26px;
     margin-bottom: 52px;
     font-family: @second-fonts;
     font-weight: 400;

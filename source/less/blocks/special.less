@@ -1,11 +1,11 @@
 .special {
   background-color: @other-grey;
-  padding-top: 25px;
+  padding-top: 26px;
 }
 
 .special__wrapper {
   .wrapper();
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 }
 
 .special__title {
@@ -15,7 +15,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: start;
   color: @basic-black;
 }
 
@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: column;
   width: 124px;
-  margin-bottom: 20px;
 }
 
 .special__item + .special__item {
@@ -56,8 +55,8 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   color: @basic-black;
-  margin-bottom: 9px;
 }
 
 .special__text {
@@ -65,7 +64,7 @@
   top: -20px;
   width: 87px;
   margin: 0;
-  padding: 2px 14px 9px;
+  padding: 8px 14px 2px;
   font-family: @second-fonts;
   font-weight: 400;
   font-size: 12px;
@@ -78,7 +77,7 @@
 
 .special__expenses {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 14px;
@@ -102,6 +101,13 @@
     flex-wrap: wrap;
   }
 
+  .special__box-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .special__title {
     margin: 0;
     margin-bottom: 63px;
@@ -109,7 +115,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    text-align: center;
+    text-align: start;
     color: @basic-black;
   }
 
@@ -123,8 +129,13 @@
     color: @special-dark-grey;
   }
 
+  .special__lists {
+    margin-bottom: 80px;
+  }
+
   .special__item {
     width: 162px;
+    margin-bottom: 0;
   }
 
   .special__item + .special__item {
@@ -165,11 +176,12 @@
     margin: 0;
     margin-bottom: 40px;
     margin-left: 167px;
+    padding-top: 10px;
     font-family: @basic-fonts;
     font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
-    text-align: center;
+    line-height: 29px;
+    text-align: end;
     text-transform: uppercase;
     color: @basic-black;
   }
@@ -184,8 +196,15 @@
   }
 
   .special__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 226px;
+  }
+
+  .special__box {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .special__title {
@@ -204,6 +223,11 @@
     font-size: 16px;
     line-height: 24px;
     color: @special-dark-grey;
+  }
+
+  .special__lists {
+    width: 438px;
+    margin-bottom: 35px;
   }
 
   .special__text {

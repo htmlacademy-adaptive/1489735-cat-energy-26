@@ -49,11 +49,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: start;
   color: @basic-black;
 }
 
 .advantages__description {
+  padding-top: 2px;
+  padding-bottom: 4px;
   width: 200px;
   margin: 0;
   font-family: @second-fonts;
@@ -68,17 +70,22 @@
     padding-top: 45px;
   }
 
+  .advantages__wrapper {
+    margin-bottom: 0;
+  }
+
   .advantages__lists {
     .list-reset();
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     counter-reset: section;
   }
 
   .advantages__title {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
     font-family: @basic-fonts;
     font-weight: 400;
     font-size: 60px;
@@ -88,11 +95,13 @@
   }
 
   .advantages__item {
-    width: 245px;
-    margin-right: 105px;
-    margin-bottom: 37px;
+    position: relative;
+    width: 270px;
+    margin-right: 55px;
+    margin-bottom: 77px;
     padding-left: 0;
     padding-top: 110px;
+    padding-bottom: 58px;
 
     &--leaf {
       background-image: url("../img/leaf_tablet.svg");
@@ -117,11 +126,20 @@
 
   .advantages__item::before {
     counter-increment: section;
-    content: "section" counter "1";
+    content: counters(section, " ")  " ";
     position: absolute;
+    top: -40px;
+    left: 118px;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic-grey;
+    z-index: -1;
   }
 
   .advantages__description {
+    padding-top: 0;
+    padding-bottom: 0;
     width: 245px;
     margin: 0;
     font-family: @second-fonts;
@@ -148,6 +166,7 @@
   }
 
   .advantages__item {
+    width: 245px;
     margin-right: 80px;
     margin-bottom: 26px;
   }
