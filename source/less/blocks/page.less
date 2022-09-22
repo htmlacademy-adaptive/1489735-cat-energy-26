@@ -12,29 +12,31 @@
   background-color: @basic-white;
 }
 
-.page__body--index .site-list__link {
-  color: @basic-white;
-
-  &:hover {
+@media (min-width: @desktop-width) {
+  .page__body--index .site-list__link {
     color: @basic-white;
-    opacity: 0.6;
+
+    &:hover {
+      color: @basic-white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
-  &:active {
-    opacity: 0.3;
+  .page__body--index .site-list__item--current::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: @basic-white;
   }
-
-  &:focus {
-    opacity: 0.7;
-  }
-}
-
-.page__body--index .site-list__item--current::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background-color: @basic-white;
 }
