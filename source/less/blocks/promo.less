@@ -1,21 +1,21 @@
 .promo {
   position: relative;
-}
 
-.promo::before {
-  width: 100%;
-  height: 302px;
-  background-color: @basic-green;
-  content: "";
-  position: absolute;
-  background-image: url("../img/index_background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+  &::before {
+    width: 100%;
+    height: 302px;
+    background-color: @basic-green;
+    content: "";
+    position: absolute;
+    background-image: url("../img/index_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/index_background@2x.jpg");
-    background-size: 320px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index_background@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -55,11 +55,12 @@
   width: 280px;
   height: 270px;
   z-index: 1;
+  margin-bottom: 3px;
 }
 
 .promo__button {
-  width: 280px;
-  padding: 11px 44px;
+  position: absolute;
+  padding: 11px 73px;
   font-family: @basic-fonts;
   font-weight: 400;
   font-size: 14px;
@@ -69,24 +70,24 @@
   text-transform: uppercase;
   color: @basic-white;
   background-color: @basic-green;
-}
 
-.promo__button:hover {
-  background-color: #5eaa2f;
-}
+  &:hover {
+    background-color: #5eaa2f;
+  }
 
-.promo__button:active {
-  color: rgba(@basic-white, 0.3);
+  &:active {
+    color: rgba(@basic-white, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .promo {
     position: relative;
-  }
 
-  .promo::before {
-    content: "";
-    background-color: @basic-white;
+    &::before {
+      content: "";
+      background-color: @basic-white;
+    }
   }
 
   .promo__wrapper {
@@ -147,25 +148,25 @@
 @media (min-width: @desktop-width) {
   .promo {
     position: relative;
-  }
 
-  .promo::before {
-    content: "";
-    position: absolute;
-    top: -110px;
-    right: 0;
-    width: 50%;
-    height: 694px;
-    background-color: @basic-green;
-    background-image: url("../img/desktop_background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/desktop_background@2x.jpg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: -110px;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background-color: @basic-green;
+      background-image: url("../img/desktop_background.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: cover;
+      z-index: 1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop_background@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 

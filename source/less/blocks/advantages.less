@@ -122,19 +122,19 @@
       background-image: url("../img/alarm_tablet.svg");
       background-repeat: no-repeat;
     }
-  }
 
-  .advantages__item::before {
-    counter-increment: section;
-    content: counters(section, " ")  " ";
-    position: absolute;
-    top: -40px;
-    left: 118px;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    color: @basic-grey;
-    z-index: -1;
+    &::before {
+      counter-increment: section;
+      content: counters(section, " ") " ";
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic-grey;
+      z-index: -1;
+    }
   }
 
   .advantages__description {
@@ -170,10 +170,10 @@
     margin-right: 80px;
     margin-bottom: 26px;
     padding-bottom: 0;
-  }
 
-  .advantages__item:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .advantages__title {

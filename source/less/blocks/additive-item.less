@@ -61,6 +61,15 @@
   color: @basic-white;
   background-color: @basic-green;
   border: none;
+
+  &:hover {
+    background-color: @special-green;
+  }
+
+  &:active {
+    background-color: @special-green;
+    color: rgba(@basic-white, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -97,7 +106,7 @@
   .additive-item__value {
     padding-top: 28px;
     grid-column: 3 / -1;
-    grid-row: 1 /  2;
+    grid-row: 1 / 2;
     font-size: 16px;
     line-height: 20px;
     align-items: center;
@@ -115,6 +124,15 @@
     line-height: 16px;
     align-items: center;
     text-align: center;
+
+    &:hover {
+      background-color: @special-green;
+    }
+
+    &:active {
+      background-color: @special-green;
+      color: rgba(@basic-white, 0.3);
+    }
   }
 }
 

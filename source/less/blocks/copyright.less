@@ -14,33 +14,41 @@
   font-size: 16px;
   line-height: 18px;
   color: @special-dark-grey;
-}
 
-.copyright__text:hover {
-  color: @special-dark-grey;
-}
+  &:hover {
+    color: @special-dark-grey;
+  }
 
-.copyright__text:active {
-  color: @special-dark-grey;
-  opacity: 0.3;
+  &:active {
+    color: @special-dark-grey;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    color: @special-dark-grey;
+  }
 }
 
 .copyright__logo {
   width: 27px;
   height: 34px;
+
+  &:hover .copyright__logo-icon {
+    fill: @basic-green;
+  }
+
+  &:active .copyright__logo-icon {
+    fill: @basic-green;
+    opacity: 0.3;
+  }
+
+  &:focus .copyright__logo-icon {
+    fill: @basic-green;
+  }
 }
 
 .copyright__logo-icon {
   fill: @special-black;
-}
-
-.copyright__logo:hover .copyright__logo-icon {
-  fill: @basic-green;
-}
-
-.copyright__logo:active .copyright__logo-icon {
-  fill: @basic-green;
-  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,24 +68,37 @@
     font-size: 16px;
     line-height: 18px;
     color: @special-dark-grey;
+
+    &:hover {
+      color: @special-dark-grey;
+    }
+
+    &:active {
+      color: @special-dark-grey;
+      opacity: 0.3;
+    }
   }
 
   .copyright__logo {
     width: 27px;
     height: 34px;
+
+    &:hover .copyright__logo-icon {
+      fill: @basic-green;
+    }
+
+    &:active .copyright__logo-icon {
+      fill: @basic-green;
+      opacity: 0.3;
+    }
+
+    &:focus .copyright__logo-icon {
+      fill: @basic-green;
+    }
   }
 
   .copyright__logo-icon {
     fill: @special-black;
-  }
-
-  .copyright__logo:hover .copyright__logo-icon {
-    fill: @basic-green;
-  }
-
-  .copyright__logo:active .copyright__logo-icon {
-    fill: @basic-green;
-    opacity: 0.3;
   }
 }
 
@@ -98,23 +119,36 @@
     font-size: 16px;
     line-height: 18px;
     color: @special-dark-grey;
+
+    &:hover {
+      color: @special-dark-grey;
+    }
+
+    &:active {
+      color: @special-dark-grey;
+      opacity: 0.3;
+    }
   }
 
   .copyright__logo {
     width: 27px;
     height: 34px;
+
+    &:hover .copyright__logo-icon {
+      fill: @basic-green;
+    }
+
+    &:active .copyright__logo-icon {
+      fill: @basic-green;
+      opacity: 0.3;
+    }
+
+    &:focus .copyright__logo-icon {
+      fill: @basic-green;
+    }
   }
 
   .copyright__logo-icon {
     fill: @special-black;
-  }
-
-  .copyright__logo:hover .copyright__logo-icon {
-    fill: @basic-green;
-  }
-
-  .copyright__logo:active .copyright__logo-icon {
-    fill: @basic-green;
-    opacity: 0.3;
   }
 }

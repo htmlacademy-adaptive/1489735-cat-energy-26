@@ -1,31 +1,28 @@
 .info-list {
   .list-reset();
   margin-bottom: 22px;
-}
-
-.info-list__item {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(3, auto);
-  column-gap: 66px;
+  column-gap: 40px;
 }
 
-.info-list__item-label {
+.info-list__item {
   font-family: @second-fonts;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   color: @special-dark-grey;
-}
 
-.info-list__item-value {
-  font-family: @second-fonts;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: @special-dark-grey;
+  &--label {
+    text-align: left;
+  }
+
+  &--value {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -33,65 +30,55 @@
     .list-reset();
     width: 250px;
     display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 0;
   }
 
   .info-list__item {
-    display: grid;
-    grid-template-columns: 50px 55px;
-    grid-template-rows: repeat(3, auto);
-    column-gap: 140px;
-    justify-self: center;
-  }
-
-  .info-list__item-label {
     font-family: @second-fonts;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    text-align: start;
     color: @special-dark-grey;
-    width: 250px;
-    align-self: center;
-    padding-top: 5px;
-    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-bottom: 8px;
     border-bottom: 1px solid @special-grey;
-  }
 
-  .info-list__item-value {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    align-items: center;
-    padding-top: 5px;
-    color: @special-dark-grey;
+
+    &--label {
+      text-align: left;
+    }
+
+    &--value {
+      text-align: center;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .info-list {
     .list-reset();
-    width: 168px;
+    width: 169px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
   }
 
   .info-list__item {
-    display: grid;
-    grid-template-columns: 50px 50px;
-    grid-template-rows: repeat(3, auto);
-    column-gap: 66px;
-  }
-
-  .info-list__item-label {
     font-size: 16px;
     line-height: 16px;
-    text-align: start;
     color: @special-dark-grey;
-    width: 169px;
-  }
+    padding-top: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid @special-grey;
 
-  .info-list__item-value {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: @special-dark-grey;
+    &--label {
+      text-align: left;
+    }
+
+    &--value {
+      text-align: center;
+    }
   }
 }
