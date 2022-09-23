@@ -53,10 +53,22 @@
     width: 219px;
   }
 
-  &--tel {
+  &--phone {
     margin-left: 2px;
     width: 204px;
   }
+}
+
+.form__input-text:hover {
+  outline: 1px solid @special-grey;
+}
+
+.form__input-text:focus {
+  outline: 2px solid @special-dark-grey;
+}
+
+.form__input-text:invalid {
+  outline: 2px solid #ff8282;
 }
 
 .form__input-text-icon {
@@ -76,6 +88,10 @@
 }
 
 .form__input-text:hover + .form__input-text-icon {
+  stroke: @other-dark-grey;
+}
+
+.form__input-text:active + .form__input-text-icon {
   stroke: @other-dark-grey;
 }
 
@@ -177,6 +193,10 @@
   border-radius: 50%;
   background-position: center;
   content: "";
+}
+
+.form__item-input:hover + .form__item-mark {
+  outline: 1px solid #bababa;
 }
 
 .form__item-input:invalid ~ span {
@@ -333,11 +353,23 @@
       width: 551px;
     }
 
-    &--tel {
+    &--phone {
       padding: 10px 22px;
       margin-left: 8px;
       width: 535px;
     }
+  }
+
+  .form__input-text:hover {
+    outline: 1px solid @special-grey;
+  }
+
+  .form__input-text:focus {
+    outline: 2px solid @special-dark-grey;
+  }
+
+  .form__input-text:invalid {
+    outline: 2px solid #ff8282;
   }
 
   .form__input-text-icon {
@@ -357,6 +389,10 @@
   }
 
   .form__input-text:hover + .form__input-text-icon {
+    stroke: @other-dark-grey;
+  }
+
+  .form__input-text:active + .form__input-text-icon {
     stroke: @other-dark-grey;
   }
 
@@ -498,6 +534,10 @@
       color: @basic-black;
       padding-left: 2px;
     }
+  }
+
+  .form__item-input:hover + .form__item-mark {
+    outline: 1px solid #bababa;
   }
 
   .form__item-input:disabled ~ span {
@@ -642,7 +682,7 @@
       width: 486px;
     }
 
-    &--tel {
+    &--phone {
       margin-left: 15px;
       width: 472px;
     }
@@ -700,6 +740,14 @@
     line-height: 30px;
     text-transform: uppercase;
     color: @special-dark-grey;
+
+    &:hover {
+      outline: 1px solid @special-grey;
+    }
+
+    &:focus {
+      outline: 2px solid @special-dark-grey;
+    }
   }
 
   .form__radio-wrapper {
@@ -775,7 +823,7 @@
     outline: 1px solid #bababa;
   }
 
-  .form__item-input:invalid ~ span {
+  .form__item-input:disabled ~ span {
     opacity: 0.3;
   }
 

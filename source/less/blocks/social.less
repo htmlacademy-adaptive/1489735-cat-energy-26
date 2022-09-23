@@ -40,6 +40,14 @@
     fill: @basic-green;
   }
 
+  &:active .social__link-icon {
+    fill: @basic-green;
+  }
+
+  &:focus .social__link-icon {
+    fill: @basic-green;
+  }
+
   &:disabled.social__link-icon {
     fill: @basic-green;
     opacity: 0.3;
@@ -90,6 +98,14 @@
     }
 
     &:hover .social__link-icon {
+      fill: @basic-green;
+    }
+
+    &:active .social__link-icon {
+      fill: @basic-green;
+    }
+
+    &:focus .social__link-icon {
       fill: @basic-green;
     }
 
@@ -148,11 +164,19 @@
       height: 22px;
     }
 
-    &:hover .social__link-icon {
+    &:hover.social__link-icon {
       fill: @basic-green;
     }
 
-    &:disabled.social__link-icon {
+    &:active .social__link-icon {
+      fill: @basic-green;
+    }
+
+    &:focus .social__link-icon {
+      fill: @basic-green;
+    }
+
+    &:disabled .social__link-icon {
       fill: @basic-green;
       opacity: 0.3;
     }

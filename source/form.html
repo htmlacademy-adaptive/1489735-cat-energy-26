@@ -55,16 +55,16 @@
                 <div class="form__wrapper-field">
                   <label class="form__label" for="catname">имя: <sup>*</sup>
                   </label>
-                  <input class="form__input-text form__input-text--name" type="text" name="catname" id="catname" placeholder="барсик">
+                  <input class="form__input-text form__input-text--name" type="name" name="catname" id="catname" placeholder="барсик" required>
                 </div>
                 <div class="form__wrapper-field">
                   <label class="form__label" for="weight">вес(кг): <sup>*</sup>
                   </label>
-                  <input class="form__input-text form__input-text--weight" type="text" name="catname" id="weight" placeholder="7">
+                  <input class="form__input-text form__input-text--weight" type="number" name="catname" id="weight" placeholder="7" required>
                 </div>
                 <div class="form__wrapper-field">
                   <label class="form__label" for="age">возраст(лет):</label>
-                  <input class="form__input-text form__input-text--age" type="text" name="catname" id="age" placeholder="7">
+                  <input class="form__input-text form__input-text--age" type="number" name="catname" id="age" placeholder="7" required>
                 </div>
               </div>
               <div class="form__radio-wrapper">
@@ -72,21 +72,21 @@
                   <li class="form__item">
                     <label class="form__item-label">
                       <input class="visually-hidden form__item-input form__item-input--radio" type="radio" id="slim" name="cat" value="похудение" checked="checked">
-                      <span class="form__item-mark form__item-mark--radio"></span>
+                      <span class="form__item-mark form__item-mark--radio" tabIndex="0"></span>
                       <span class="form__item-option form__item-option--radio">похудение</span>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__item-label">
                       <input class="visually-hidden form__item-input form__item-input--radio" type="radio" id="fat" name="cat" value="набор массы">
-                      <span class="form__item-mark form__item-mark--radio"></span>
+                      <span class="form__item-mark form__item-mark--radio" tabIndex="0"></span>
                       <span class="form__item-option form__item-option--radio">набор массы</span>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__item-label">
                       <input class="visually-hidden form__item-input form__item-input--radio" type="radio" id="advice" name="cat" value="не знаю (нужен ваш совет)">
-                      <span class="form__item-mark form__item-mark--radio"></span>
+                      <span class="form__item-mark form__item-mark--radio" tabIndex="0"></span>
                       <span class="form__item-option form__item-option--radio">не знаю (нужен ваш совет)</span>
                     </label>
                   </li>
@@ -99,7 +99,7 @@
                 <div class="form__wrapper-field">
                   <label class="form__label" for="cat-owner">e-mail: <sup>*</sup>
                   </label>
-                  <input class="form__input-text form__input-text--email" type="email" name="catname" id="cat-owner" placeholder="kuklachev@gmail.com">
+                  <input class="form__input-text form__input-text--email" type="email" name="catname" id="cat-owner" placeholder="kuklachev@gmail.com" required>
                   <svg class="form__input-text-icon form__input-text-icon--mail" width="20" height="15" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg">
                     <use href="img/sprite.svg#email" />
                   </svg>
@@ -107,7 +107,7 @@
                 <div class="form__wrapper-field">
                   <label class="form__label" for="owner-phone">Телефон: <sup>*</sup>
                   </label>
-                  <input class="form__input-text form__input-text--tel" type="text" name="catname" id="owner-phone" placeholder="8 (960) 900-60-90">
+                  <input class="form__input-text form__input-text--phone" type="tel" name="catname" id="owner-phone" placeholder="8 (960) 900-60-90" pattern="[8]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                   <svg class="form__input-text-icon form__input-text-icon--phone" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
                     <use href="img/sprite.svg#phone" />
                   </svg>
@@ -127,28 +127,28 @@
                 <li class="form__item form__item--checkbox">
                   <label class="form__item-label">
                     <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="sweetener" name="sweetener" value="сахарозаменитель" checked="checked">
-                    <span class="form__item-mark form__item-mark--checkbox"></span>
+                    <span class="form__item-mark form__item-mark--checkbox" tabIndex="0"></span>
                     <span class="form__item-option form__item-option--checkbox">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__item form__item--checkbox">
                   <label class="form__item-label">
                     <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="water" name="water" value="питевая вода">
-                    <span class="form__item-mark form__item-mark--checkbox"></span>
+                    <span class="form__item-mark form__item-mark--checkbox" tabIndex="0"></span>
                     <span class="form__item-option form__item-option--checkbox">питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__item form__item--checkbox">
                   <label class="form__item-label">
                     <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="milk" name="milk" value="молоко">
-                    <span class="form__item-mark form__item-mark--checkbox"></span>
+                    <span class="form__item-mark form__item-mark--checkbox" tabIndex="0"></span>
                     <span class="form__item-option form__item-option--checkbox">молоко</span>
                   </label>
                 </li>
                 <li class="form__item form__item--checkbox">
                   <label class="form__item-label">
                     <input class="visually-hidden form__item-input form__item-input--checkbox" type="checkbox" id="vitamins" name="vitamins" value="витамины">
-                    <span class="form__item-mark form__item-mark--checkbox"></span>
+                    <span class="form__item-mark form__item-mark--checkbox" tabIndex="0"></span>
                     <span class="form__item-option form__item-option--checkbox">витамины</span>
                   </label>
                 </li>
