@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
@@ -21,6 +21,10 @@
             <img class="main-header__logo-image" src="img/logotype_image_mobile.svg" width="191" height="38" alt="Логотип компании фото.">
           </picture>
         </a>
+        <!--
+            Для того чтобы скрыть меню, удалить классы main-nav--opened main-nav--nojs добавьте класс main-nav--closed.
+            Для того чтобы открыть меню, удалить класс main-nav--closed и добавьте main-nav--opened.
+        -->
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
@@ -28,7 +32,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--current">
-                <a class="site-list__link">Главная</a>
+                <a class="site-list__link" href="/">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>

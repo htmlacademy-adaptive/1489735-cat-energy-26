@@ -67,7 +67,7 @@
   outline: 2px solid @special-dark-grey;
 }
 
-.form__input-text:invalid {
+.form__input-text:invalid:not(:focus):not(:placeholder-shown) {
   outline: 2px solid #ff8282;
 }
 
@@ -99,7 +99,7 @@
   stroke: @basic-green;
 }
 
-.form__input-text:invalid + .form__input-text-icon {
+.form__input-text:invalid:not(:focus):not(:placeholder-shown) + .form__input-text-icon {
   stroke: #ff8282;
 }
 
@@ -162,6 +162,10 @@
 
 .form__item-input {
   display: block;
+
+  &:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 .form__item-mark {
@@ -195,7 +199,8 @@
   content: "";
 }
 
-.form__item-input:hover + .form__item-mark {
+.form__item-input:hover + .form__item-mark,
+.form__item-input:focus + .form__item-mark {
   outline: 1px solid #bababa;
 }
 
@@ -301,7 +306,7 @@
     padding-right: 37px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 72px;
+    margin-bottom: 52px;
   }
 
   .form__wrapper-field {
@@ -368,10 +373,6 @@
     outline: 2px solid @special-dark-grey;
   }
 
-  .form__input-text:invalid {
-    outline: 2px solid #ff8282;
-  }
-
   .form__input-text-icon {
     position: absolute;
     stroke: @other-dark-grey;
@@ -418,7 +419,7 @@
 
   .form__radio-wrapper {
     padding-left: 41px;
-    padding-right: 27px;
+    padding-right: 36px;
     margin-bottom: 75px;
 
     &::before {
@@ -534,14 +535,6 @@
       color: @basic-black;
       padding-left: 2px;
     }
-  }
-
-  .form__item-input:hover + .form__item-mark {
-    outline: 1px solid #bababa;
-  }
-
-  .form__item-input:disabled ~ span {
-    opacity: 0.3;
   }
 
   .form__checkbox-wrapper {
@@ -696,10 +689,6 @@
     outline: 2px solid @special-dark-grey;
   }
 
-  .form__input-text:invalid {
-    outline: 2px solid #ff8282;
-  }
-
   .form__input-text-icon {
     position: absolute;
     stroke: @other-dark-grey;
@@ -726,10 +715,6 @@
 
   .form__input-text:focus + .form__input-text-icon {
     stroke: @basic-green;
-  }
-
-  .form__input-text:invalid + .form__input-text-icon {
-    stroke: #ff8282;
   }
 
   .form__textarea {
@@ -817,14 +802,6 @@
     background-repeat: no-repeat;
     background-position: center;
     content: "";
-  }
-
-  .form__item-input:hover + .form__item-mark {
-    outline: 1px solid #bababa;
-  }
-
-  .form__item-input:disabled ~ span {
-    opacity: 0.3;
   }
 
   .form__item-option {
