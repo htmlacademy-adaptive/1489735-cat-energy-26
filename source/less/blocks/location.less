@@ -1,9 +1,14 @@
 .location {
+  width: 320px;
+  min-height: 362px;
+  margin: 0 auto;
   background-color: @basic-green;
+  background-image: url("../../img/location_mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .location iframe {
-
   width: 100%;
   border: none;
   display: block;
@@ -11,8 +16,13 @@
 
 @media (min-width: @tablet-width) {
   .location {
+    width: 768px;
+    min-height: 400px;
     display: block;
     background-color: @basic-green;
+    background-image: url("../../img/location_tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .location iframe {
@@ -25,8 +35,13 @@
 
 @media (min-width: @desktop-width) {
   .location {
+    width: 1440px;
+    min-height: 400px;
     display: block;
     background-color: @basic-green;
+    background-image: url("../../img/location_desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .location iframe {
